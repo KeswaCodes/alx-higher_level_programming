@@ -3,5 +3,5 @@ alphabet = ""
 for i in range(97, 123):
     if i != 113 and i != 101:
         alphabet = alphabet + str(chr(i))
-    
+
 print("{}".format(alphabet), end='')
