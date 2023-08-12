@@ -1,10 +1,7 @@
 #!/usr/bin/python3
-from calculator_1 import sub, mul, div as module
+from calculator import add as module
 if __name__ == "__main__" :
-    b = 5
     a = 10
-    print("{} - {} = {}".format(a, b, module.sub(a, b)))
-
-
-
-
+    b = 5
+    x = module.add(a, b)
+    print(x)

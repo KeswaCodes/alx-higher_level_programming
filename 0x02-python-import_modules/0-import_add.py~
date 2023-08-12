@@ -1,3 +1,0 @@
-__import__("0-add")
-if __name__ == "__main__":
-    module.add(a, b)
