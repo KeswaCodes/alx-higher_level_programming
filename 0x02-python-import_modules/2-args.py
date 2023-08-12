@@ -1,19 +1,19 @@
 #!/usr/bin/python3
-import sys
+from sys import argv
 if __name__ == "__main__":
     i = 1
-    args = len(sys.argv)
+    args = len(argv)
     args -= 1
-    if len(sys.argv) == 1:
+    if len(argv) == 1:
         print("{} arguments".format(args))
 
     else:
         if args == 1:
             print("{} argument: ".format(args))
-            print("{}: {}".format(args, sys.argv[args]))
+            print("{}: {}".format(args, argv[args]))
 
         else:
             print("{} arguments:".format(args))
             while i <= args:
-                print("{}: {}".format(i, sys.argv[i]))
+                print("{}: {}".format(i, argv[i]))
                 i += 1
