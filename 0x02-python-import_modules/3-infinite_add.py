@@ -7,9 +7,9 @@ if __name__ == "__main__":
     if len(argv) == 1:
         print(result)
     else:
-        a = result
-        while i < len(argv):
-            result += int(argv[i])
-            i += 1
-    print(add(0, result))
-    
+        if len(argv) > 2:
+            a = result
+            while i < len(argv):
+                result += int(argv[i])
+                i += 1
+            print(add(0, result))
