@@ -10,7 +10,7 @@ def add_tuple(tuple_a=(), tuple_b=()):
 
         else:
             pass
-        
+
     elif len(tuple_b) < 2:
         if len(tuple_b) == 1:
             tuple_b_first_int = tuple_b[0]
