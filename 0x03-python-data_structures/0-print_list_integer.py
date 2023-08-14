@@ -3,5 +3,4 @@ def print_list_integer(my_list=[]):
     if not my_list:
         return
     else:
-        for item in range(1, len(my_list) + 1):
-            print("{}".format(item))
+        print("{}".format(my_list[:]))
