@@ -32,4 +32,4 @@ for element in num_list:
         final_list.append(element)
 # create final string for the final list of non-reverse & non-double digits
 final_string = ", ".join(final_list)
-print(final_string)
+print("{}".format(final_string))
