@@ -7,6 +7,8 @@ def best_score(a_dictionary):
     highest = list_of_tuples[0][1]
 
     for i in range(len(list_of_tuples)):
+        if list_of_tuples[i][1] is None:
+            return None
         if list_of_tuples[i][1] > highest:
             highest = list_of_tuples[i][1]
 
