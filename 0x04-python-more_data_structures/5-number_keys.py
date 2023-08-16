@@ -3,4 +3,4 @@ def number_keys(a_dictionary):
     if len(a_dictionary) == 0:
         return None
 
-    return len(a_dictionary)
+    return len(a_dictionary.keys())
