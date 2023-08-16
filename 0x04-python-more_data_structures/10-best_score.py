@@ -5,18 +5,18 @@ def best_score(a_dictionary):
 
     if len(a_dictionary) == 0:
         return None
-
     keys = list(a_dictionary.keys())
-    highest = a_dictionary.get(keys[0])
-    
+    highest = a_dictionary.get(keys[0], None)
+    if highest is None:
+        return None
+
     for key in keys:
-       check = a_dictionary.get(key, None)
-       if check is None:
-           return None
+        check = a_dictionary.get(key, None)
+        if check is None:
+            return None
 
-       if check > highest:
-           highest = check
-           key_highest = key
-
+        if check > highest:
+            highest = check
+            key_highest = key
 
     return key_highest
