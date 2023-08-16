@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def print_sorted_dictionary(a_dictionary):
-    if len(a_dictionary) == 0:
+    if a_dictionary is None:
         return None
 
     sorted_list = sorted(a_dictionary)
