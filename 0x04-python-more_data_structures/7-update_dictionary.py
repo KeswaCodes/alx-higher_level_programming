@@ -7,7 +7,9 @@ def update_dictionary(a_dictionary, key, value):
     if len(key) == 0:
         return None
 
-    if value is None or len(value.strip()) == 0:
+    if value is None:
+        return None
+    elif len(value.strip()) == 0:
         return None
 
     a_dictionary[key] = value
