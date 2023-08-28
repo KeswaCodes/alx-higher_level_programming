@@ -9,10 +9,10 @@ def safe_print_list(my_list=[], x=0):
             i += 1
             list_len += 1
         print("{}".format(string))
-    
+
     except IndexError:
         print("{}".format(string))
-        
+
     finally:
 
         return list_len
