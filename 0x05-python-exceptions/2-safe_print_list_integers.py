@@ -14,8 +14,7 @@ def safe_print_list_integers(my_list=[], x=0):
         print("{}".format('\n'), end='')
     except IndexError:
         for element in new_list:
-            print("{:d}".format(element), end='') 
+            print("{:d}".format(element), end='')
         raise
-
 
     return num_printed
