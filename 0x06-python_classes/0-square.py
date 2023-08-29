@@ -8,4 +8,3 @@ class Square:
     length (int): The length of one side of a square
     """
     length = None
-    
