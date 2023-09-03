@@ -1,0 +1,44 @@
+#3-say_my_name.txt
+===========================
+How to use 3-say_my_name.py
+===========================
+
+This library contains the function ``say_my_name(first_name, last_name="")``
+
+This function prints ``My name is <first_name> <last_name>``
+
+ ::
+
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+>>> say_my_name('Zinhle', 'Keswa')
+My name is Zinhle Keswa
+
+
+This function sets a an empty string as default when the last name isn't passed
+
+ ::
+
+>>> say_my_name("Juicy-J")
+My name is Juicy-J
+
+
+First name and last name must be strings otherwise an exception will be raised
+
+ ::
+
+>>> say_my_name(0)
+Traceback (most recent call last):
+TypeError: first_name must be a string
+
+>>> say_my_name("")
+My name is
+
+
+>>> say_my_name('string', {'Z', 'i', 'n', 'h', 'l', 'e'})
+Traceback (most recent call last):
+TypeError: last_name must be a string
+
+>>> say_my_name(['string'], {85, 96})
+Traceback (most recent call last):
+TypeError: first_name must be a string
+
