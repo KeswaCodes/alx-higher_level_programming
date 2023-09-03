@@ -1,3 +1,4 @@
+
 #0-add_integer.txt
 
 ===========================
@@ -13,8 +14,21 @@ This functions adds two integers together
  ::
 
 >>> add_integer = __import__('0-add_integer').add_integer
+
+Numbers
+=======
+
 >>> add_integer(12, 5)
 17
+
+>>> add_integer(0, 0)
+0
+
+>>> add_integer(-51, 23)
+-28
+
+Non-Numbers
+===========
 
 a and b must be floats or integers, otherwise a TypeError will be raised
 

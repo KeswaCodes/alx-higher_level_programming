@@ -1,0 +1,74 @@
+#2-matrix_divided.txt
+====================================
+How to test for 2-matrix_divided.py
+====================================
+
+This module is a test file for the function ``matrix_divided(matrix, div)``.
+
+``matrix_divided(matrix, div)`` returns a new matrix of elements in ``matrix`` divided by ``div``
+All elements of the matrix should be divided by ``div`` and rounded to 2 decimal places
+ ::
+
+>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+>>> matrix1 = [
+...     [1, 2, 3.5, 4, 5.6],
+...     [6.7, 7, 8, 9.1, 10],
+...     [11, 12, 13, 14, 15.2]
+... ]
+
+>>> new_matrix = matrix_divided(matrix1, 7)
+>>> print(new_matrix)
+[[0.14, 0.29, 0.5, 0.57, 0.8], [0.96, 1.0, 1.14, 1.3, 1.43], [1.57, 1.71, 1.86, 2.0, 2.17]]
+
+``div`` must be a float or int, or an exception will be raised
+
+ ::
+
+>>> matrix_divded(matrix1, 'float')
+Traceback (most recent last call):
+TypeError: div must be a number
+
+>>> matrix_divded(matrix1, {2, 9, 7})
+Traceback (most recent last call):
+TypeError: div must be a number
+
+``div`` can't be equal to zero, otherwise an exception will be raised
+
+ ::
+
+>>> matrix_divided(matrix1, 0)
+Traceback (most recent last call):
+ZeroDivisionError: division by zero
+
+
+The matrix must be a list of integers of floats or an exception will be raised
+
+ ::
+
+>>> matrix2 = [
+...     [1, "two", 3.5, None, True],
+...     ["hello", 42, [1, 2, 3], {"key": "value"}, (1, 2, 3)],
+...     [{"a": 1, "b": 2}, False, 5.5, "world", 99]
+... ]
+>>> matrix_divided(matrix2, 3)
+Traceback (most recent last call):
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+>>> matrix_divided(None, 3)
+Traceback (most recent last call):
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+
+
+Each row of the matrix must be of the same size, otherwise an exception will be raised
+
+ ::
+
+>>> matrix3 = [
+...     [1, 5],
+...     [98, 23, 75, 8],
+...     [8, 7, 9]
+... ]
+>>> matrix_divided(matrix3, 2)
+Traceback (most recent last call):
+TypeError: Each row of the matrix must have the same size
