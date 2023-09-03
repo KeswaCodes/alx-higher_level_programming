@@ -1,0 +1,22 @@
+#5-text_indentation.txt
+================================
+How to use 5-text_indentation.py
+================================
+
+This library contains only one function, ``text_indenation()``
+This function takes ``text`` as a parameter which should be a string
+
+ ::
+
+>>> t_ind = __import__('5-text_indentation').text_indentation
+>>> t_ind('Hi. How are you?')
+Hi.
+
+How are you?
+
+>>> t_ind(". , ? # :")
+.
+
+,?
+
+# :

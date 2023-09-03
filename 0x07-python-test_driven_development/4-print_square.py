@@ -8,6 +8,8 @@ def print_square(size):
     This function prints a square using the character '#'
     size (int): the size length of the square
     """
+    if size is None:
+        raise TypeError("size must be an integer")
     if not (isinstance(size, int)):
         raise TypeError("size must be an integer")
     if size < 0:
@@ -18,8 +20,7 @@ def print_square(size):
     for i in range(size):
         for j in range(size):
             print('#', end='')
-
-        print('\n')
+        print('\n', end='')
 
             
 

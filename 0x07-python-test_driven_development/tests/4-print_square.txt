@@ -1,1 +1,56 @@
+#4-print_square.txt
+=============================
+How to use 4-print_square.py
+=============================
 
+This library contains the function ``print_square()``
+
+``print_square()`` takes a ``size (int)`` as a parameter and prints a square with the symbol '#'
+
+ ::
+
+
+>>> p_sqr = __import__('4-print_square').print_square
+>>> p_sqr(1)
+#
+
+>>> p_sqr(4)
+####
+####
+####
+####
+
+
+If ``size`` is less than zero, an exception will be raised
+
+ ::
+
+>>> p_sqr(-3)
+Traceback (most recent call last):
+ValueError: size must be >= 0
+
+If ``size`` is a float and less than zero, an exception will be raised
+
+ ::
+
+>>> p_sqr(-5.24)
+Traceback (most recent call last):
+TypeError: size must be an integer
+
+
+``size`` must be an integer, otherwise an exception will be raised
+
+ ::
+
+
+>>> p_sqr([8])
+Traceback (most recent call last):
+TypeError: size must be an integer
+
+>>> p_sqr('5')
+Traceback (most recent call last):
+TypeError: size must be an integer
+
+>>> p_sqr(3.4)
+Traceback (most recent call last):
+TypeError: size must be an integer
