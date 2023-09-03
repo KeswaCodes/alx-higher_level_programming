@@ -30,4 +30,5 @@ class TestMaxInteger(unittest.TestCase):
             max_int(['Zinhle', 19, {'Holberton'}])
             self.assertEqual(cm.e.args[0], "'>' not supported between instances of 'int' and 'str'")
 
-
+    def t
+    
